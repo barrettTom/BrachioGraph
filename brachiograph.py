@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-#from adafruit_servokit import ServoKit
+from adafruit_servokit import ServoKit
 
 from time import sleep
 import readchar
@@ -10,13 +10,11 @@ import tqdm
 
 class Bonnet:
     def __init__(self):
-        #self.kit = ServoKit(channels=16)
-
+        self.kit = ServoKit(channels=16)
         self.last_angles = [0, 0, 0]
 
     def set_angle(self, i, a):
-        a += 90
-        #self.kit.servo[i].angle = a
+        self.kit.servo[i].angle = a
         self.last_angles[i] = a
 
     def set_angles(self, a0, a1):

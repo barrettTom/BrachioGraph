@@ -25,7 +25,7 @@ bg = BrachioGraph(
 #bg.drive_xy()
 
 # use these to test them
-#bg.box()
+bg.box()
 #bg.test_pattern()
 
 # generating
