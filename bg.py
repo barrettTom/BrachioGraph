@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 from time import sleep
-
 from brachiograph import BrachioGraph
 from linedraw import vectorise, image_to_json
 
@@ -16,16 +15,13 @@ bg = BrachioGraph(
     angle_down=0,
 )
 
-#bg.set_angles(90, 90)
-#sleep(1)
-#bg.set_angles(95, 85)
-#sleep(1)
+#bg.set_angles(-120, 0)
 
 # use this to discover the bounds, (min_x, min y, max_x, max_y)
-#bg.drive_xy()
+bg.drive_xy()
 
 # use these to test them
-bg.box()
+#bg.box()
 #bg.test_pattern()
 
 # generating

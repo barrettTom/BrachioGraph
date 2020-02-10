@@ -14,6 +14,8 @@ class Bonnet:
         self.last_angles = [0, 0, 0]
 
     def set_angle(self, i, a):
+        if i == 0:
+            a += 120
         self.kit.servo[i].angle = a
         self.last_angles[i] = a
 
