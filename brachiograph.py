@@ -5,6 +5,7 @@ import readchar
 import math
 import numpy
 import json
+from PCA9685 import PWM
 
 try:
     import pigpio

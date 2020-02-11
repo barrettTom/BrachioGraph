@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from brachiograph import BrachioGraph
 
 # Uncomment the definition you want to use.
