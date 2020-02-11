@@ -105,6 +105,9 @@ class PWM:
       self._frequency = (25000000.0 / 4096.0) / (prescale + 1)
       self._pulse_width = (1000000.0 / self._frequency)
 
+   def get_servo_pulsewidth(self, channel):
+       return self.pi.get_servo_pulsewidth(channel)
+
    def set_duty_cycle(self, channel, percent):
 
       "Sets the duty cycle for a channel.  Use -1 for all channels."
